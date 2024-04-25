@@ -16,6 +16,50 @@
         </div>
     </div>
 
+    <section class="fifty-fifty my-60 md:my-90 xl:my-120">
+        <div class="site-container">
+            <div class="grid md:grid-cols-2 w-full h-full gap-40 xl:gap-80">
+                <div class="image-container relative h-auto md:h-full aspect-[3/2] md:aspect-auto w-full">
+                    <img class="absolute md:relative w-full h-full md:h-auto rounded-[28px]" src="../assets/image-1.webp" alt="">
+                </div>
+
+                <div class="text-container flex flex-col justify-center md:pt-32 md:pb-60">
+                    <h6 class="mb-12 md:mb-20 text-white block px-18 py-8 leading-1 rounded-[20px] bg-[#81d6fd] w-fit uppercase text-9 md:text-11">New feature</h6>
+
+                    <h2 class="md:max-w-[520px]">Account info</h2>
+
+                    <div class="copy mt-28 md:max-w-[575px]">
+                        <p>We have created a new feature that will allow you to see details about your spotify account, and create a playslist based on your most listened music with the ability to filter it</p>
+                    </div>
+
+                    <div class="btn-container mt-20">
+                        <a class="btn" href="/account">View your account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fifty-fifty my-60 md:my-90 xl:my-120">
+        <div class="site-container">
+            <div class="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full gap-40 xl:gap-80">
+                <div class="text-container flex flex-col justify-center md:pt-32 md:pb-60">
+                    <h6 class="mb-12 md:mb-20 text-white block px-18 py-8 leading-1 rounded-[20px] bg-[#81d6fd] w-fit uppercase text-9 md:text-11">COMING SOON</h6>
+
+                    <h2 class="md:max-w-[520px]">Apple music</h2>
+
+                    <div class="copy mt-28 md:max-w-[575px]">
+                        <p>We are working on the functionality of retaining account information on apple music, this feature will come in the coming months.</p>
+                    </div>
+                </div>
+
+                <div class="image-container relative h-auto md:h-full aspect-[3/2] md:aspect-auto w-full">
+                    <img class="absolute md:relative w-full h-full md:h-auto rounded-[28px]" src="../assets/image-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <Footer/>
 </template>
 

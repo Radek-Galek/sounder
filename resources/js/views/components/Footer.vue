@@ -91,7 +91,7 @@
 
             <nav class="flex flex-col gap-5">
                 <h5 class="mb-16 font-bold">Quick Links</h5>
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
                 <a href="/account">Account</a>
                 <a href="/generate-songs">Generate songs</a>
                 <a href="/example">Example</a>

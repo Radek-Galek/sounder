@@ -44,7 +44,7 @@
 
             <nav class="hidden lg:flex flex-row items-center gap-30">
                 <li>
-                    <a href="/home">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
                     <a href="/generate-songs">Generate Songs</a>
@@ -55,7 +55,7 @@
             </nav>
 
             <div class="login-links hidden lg:flex flex-row items-center gap-24">
-                <div class="apple-music">
+                <button class="apple-music" @click="appleMusicPopup">
                     <svg class="max-w-[80px] w-full h-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="24" viewBox="0 0 101 24" fill="none">
                         <g clip-path="url(#clip0_3302_73)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M42.8888 23.5608V7.54344H42.7845L36.3414 23.5608H33.8818L27.4234 7.54344H27.3202V23.5608H24.2985V1.79741H28.1349L35.0523 19.141H35.1709L42.0729 1.79865H45.9247V23.562H42.8888V23.5608ZM62.633 23.5608H59.5662V20.8764H59.4926C58.633 22.7768 57.0485 23.8466 54.6637 23.8466C51.272 23.8466 49.1966 21.6 49.1966 17.9655V7.6941H52.3962V17.332C52.3962 19.7448 53.5229 21.0413 55.7287 21.0413C58.0412 21.0413 59.4335 19.4127 59.4335 16.9394V7.6941H62.6319V23.5608H62.633ZM71.4017 7.40697C75.0305 7.40697 77.3858 9.45919 77.4901 12.3843H74.4827C74.3047 10.847 73.1936 9.88145 71.4017 9.88145C69.6679 9.88145 68.5127 10.7403 68.5127 12.0083C68.5127 13.0036 69.2243 13.6808 70.9118 14.0735L73.445 14.6618C76.6303 15.4162 77.8448 16.6832 77.8448 18.9749C77.8448 21.8716 75.1931 23.8621 71.5202 23.8621C67.6245 23.8621 65.2823 21.9167 64.9871 18.9002H68.157C68.4534 20.5585 69.5647 21.3734 71.5202 21.3734C73.445 21.3734 74.6309 20.5585 74.6309 19.262C74.6309 18.2359 74.0533 17.6333 72.3492 17.2407L69.816 16.6381C66.8537 15.9441 65.3867 14.4958 65.3867 12.1898C65.3867 9.3536 67.8167 7.40697 71.4017 7.40697ZM80.0646 3.50199C80.0646 2.46059 80.8949 1.63141 81.9158 1.63141C82.9382 1.63141 83.7541 2.46173 83.7541 3.50199C83.7541 4.5268 82.9382 5.37153 81.9158 5.37153C81.4031 5.36728 80.9664 5.18283 80.6056 4.81819C80.2447 4.45375 80.0648 4.01491 80.0659 3.50199H80.0646ZM80.3161 7.6941H83.5157V23.5608H80.3161V7.6941ZM97.0244 13.1542C96.6983 11.465 95.4542 10.1223 93.3658 10.1223C90.8921 10.1223 89.2626 12.2182 89.2626 15.6262C89.2626 19.1113 90.9063 21.1327 93.3955 21.1327C95.3641 21.1327 96.6544 20.0318 97.0243 18.1909H100.107C99.7662 21.5691 97.1146 23.8621 93.367 23.8621C88.908 23.8621 86.005 20.7543 86.005 15.6275C86.005 10.5896 88.908 7.40697 93.3374 7.40697C97.3517 7.40697 99.7959 10.0321 100.077 13.1542H97.0255H97.0244ZM14.5123 3.92072C13.6846 4.91 12.3718 5.69534 11.0578 5.57908C10.8858 4.24101 11.544 2.81518 12.2864 1.94331C13.1129 0.923257 14.5408 0.197284 15.7113 0.137909C15.8548 1.53525 15.3128 2.90181 14.5135 3.92196L14.5123 3.92072ZM15.697 5.84124C16.4371 5.89927 18.5729 6.13066 19.9403 8.18993C19.8264 8.2777 17.406 9.69877 17.4345 12.6857C17.4629 16.2562 20.5094 17.4447 20.5379 17.4743C20.5094 17.5621 20.0553 19.1576 18.9441 20.8099C17.9753 22.2619 16.9791 23.683 15.384 23.7127C13.8458 23.7411 13.3323 22.7838 11.5677 22.7838C9.80201 22.7838 9.23147 23.683 7.77994 23.7411C6.24178 23.798 5.07604 22.2026 4.10717 20.7519C2.11246 17.8219 0.604036 12.4839 2.6544 8.88617C3.65062 7.08792 5.47332 5.95626 7.4384 5.92663C8.94807 5.89938 10.344 6.94316 11.2547 6.94316C12.1666 6.94316 13.789 5.72498 15.697 5.84V5.84124Z" fill="black"/>
@@ -66,7 +66,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                </div>
+                </button>
                 <button @click="loginWithSpotify">
                     <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3302_75)">
@@ -95,7 +95,7 @@
         <div class="site-container py-50">
             <nav class="flex flex-col gap-12 mb-50">
                 <li>
-                    <a href="/home">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
                     <a href="/generate-songs">Generate Songs</a>
@@ -106,7 +106,7 @@
             </nav>
 
             <div class="login-links flex flex-row items-center gap-24">
-                <div class="apple-music">
+                <button class="apple-music" @click="appleMusicPopup">
                     <svg class="max-w-[80px] w-full h-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="24" viewBox="0 0 101 24" fill="none">
                         <g clip-path="url(#clip0_3302_73)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M42.8888 23.5608V7.54344H42.7845L36.3414 23.5608H33.8818L27.4234 7.54344H27.3202V23.5608H24.2985V1.79741H28.1349L35.0523 19.141H35.1709L42.0729 1.79865H45.9247V23.562H42.8888V23.5608ZM62.633 23.5608H59.5662V20.8764H59.4926C58.633 22.7768 57.0485 23.8466 54.6637 23.8466C51.272 23.8466 49.1966 21.6 49.1966 17.9655V7.6941H52.3962V17.332C52.3962 19.7448 53.5229 21.0413 55.7287 21.0413C58.0412 21.0413 59.4335 19.4127 59.4335 16.9394V7.6941H62.6319V23.5608H62.633ZM71.4017 7.40697C75.0305 7.40697 77.3858 9.45919 77.4901 12.3843H74.4827C74.3047 10.847 73.1936 9.88145 71.4017 9.88145C69.6679 9.88145 68.5127 10.7403 68.5127 12.0083C68.5127 13.0036 69.2243 13.6808 70.9118 14.0735L73.445 14.6618C76.6303 15.4162 77.8448 16.6832 77.8448 18.9749C77.8448 21.8716 75.1931 23.8621 71.5202 23.8621C67.6245 23.8621 65.2823 21.9167 64.9871 18.9002H68.157C68.4534 20.5585 69.5647 21.3734 71.5202 21.3734C73.445 21.3734 74.6309 20.5585 74.6309 19.262C74.6309 18.2359 74.0533 17.6333 72.3492 17.2407L69.816 16.6381C66.8537 15.9441 65.3867 14.4958 65.3867 12.1898C65.3867 9.3536 67.8167 7.40697 71.4017 7.40697ZM80.0646 3.50199C80.0646 2.46059 80.8949 1.63141 81.9158 1.63141C82.9382 1.63141 83.7541 2.46173 83.7541 3.50199C83.7541 4.5268 82.9382 5.37153 81.9158 5.37153C81.4031 5.36728 80.9664 5.18283 80.6056 4.81819C80.2447 4.45375 80.0648 4.01491 80.0659 3.50199H80.0646ZM80.3161 7.6941H83.5157V23.5608H80.3161V7.6941ZM97.0244 13.1542C96.6983 11.465 95.4542 10.1223 93.3658 10.1223C90.8921 10.1223 89.2626 12.2182 89.2626 15.6262C89.2626 19.1113 90.9063 21.1327 93.3955 21.1327C95.3641 21.1327 96.6544 20.0318 97.0243 18.1909H100.107C99.7662 21.5691 97.1146 23.8621 93.367 23.8621C88.908 23.8621 86.005 20.7543 86.005 15.6275C86.005 10.5896 88.908 7.40697 93.3374 7.40697C97.3517 7.40697 99.7959 10.0321 100.077 13.1542H97.0255H97.0244ZM14.5123 3.92072C13.6846 4.91 12.3718 5.69534 11.0578 5.57908C10.8858 4.24101 11.544 2.81518 12.2864 1.94331C13.1129 0.923257 14.5408 0.197284 15.7113 0.137909C15.8548 1.53525 15.3128 2.90181 14.5135 3.92196L14.5123 3.92072ZM15.697 5.84124C16.4371 5.89927 18.5729 6.13066 19.9403 8.18993C19.8264 8.2777 17.406 9.69877 17.4345 12.6857C17.4629 16.2562 20.5094 17.4447 20.5379 17.4743C20.5094 17.5621 20.0553 19.1576 18.9441 20.8099C17.9753 22.2619 16.9791 23.683 15.384 23.7127C13.8458 23.7411 13.3323 22.7838 11.5677 22.7838C9.80201 22.7838 9.23147 23.683 7.77994 23.7411C6.24178 23.798 5.07604 22.2026 4.10717 20.7519C2.11246 17.8219 0.604036 12.4839 2.6544 8.88617C3.65062 7.08792 5.47332 5.95626 7.4384 5.92663C8.94807 5.89938 10.344 6.94316 11.2547 6.94316C12.1666 6.94316 13.789 5.72498 15.697 5.84V5.84124Z" fill="white"/>
@@ -117,7 +117,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                </div>
+                </button>
                 <button @click="loginWithSpotify">
                     <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3302_75)">
@@ -133,6 +133,16 @@
             </div>
         </div>
     </div>
+
+    <div v-if="showAppleMusicPopup" class="modal">
+        <div class="modal-content">
+            <span class="close" @click="closeModal()">&times;</span>
+            <h4 class="mb-20">Apple Music</h4>
+            <div class="copy pb-20">
+                <p>Apple music account review is coming soon!</p>
+            </div>
+        </div>
+    </div>
   </template>
   
 
@@ -143,18 +153,31 @@ import { ref, onMounted } from 'vue';
 export default {
   name: 'Header',
   setup() {
-    const loginWithSpotify = () => {
-      // Define your application's client ID and redirect URI
-      const clientId = '79fce09ecd854abc88b57c7a72a6f4bd'; // Replace with your actual client ID
-      const redirectUri = 'http://localhost:8000/callback'; // Replace with your actual redirect URI
-      const scopes = 'user-read-private user-read-email user-top-read playlist-modify-private playlist-modify-public'; // Define the scopes you need
+    const showAppleMusicPopup = ref(false);
 
-      // Redirect the user to the Spotify authorization page
-      window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}&response_type=code&show_dialog=true`;
+    const loginWithSpotify = () => {
+        // Define your application's client ID and redirect URI
+        const clientId = '79fce09ecd854abc88b57c7a72a6f4bd'; // Replace with your actual client ID
+        const redirectUri = 'http://localhost:8000/callback'; // Replace with your actual redirect URI
+        const scopes = 'user-read-private user-read-email user-top-read playlist-modify-private playlist-modify-public'; // Define the scopes you need
+
+        // Redirect the user to the Spotify authorization page
+        window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}&response_type=code&show_dialog=true`;
+    };
+
+    const appleMusicPopup = () => {
+        showAppleMusicPopup.value = true;
+    };
+
+    const closeModal = () => {
+        showAppleMusicPopup.value = false;
     };
 
     return {
       loginWithSpotify,
+      showAppleMusicPopup,
+      appleMusicPopup,
+      closeModal,
     };
   }
 }
