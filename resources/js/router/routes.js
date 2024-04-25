@@ -1,20 +1,11 @@
-import {default as PageLogin} from "@/views/pages/auth/login/Main";
-import {default as PageRegister} from "@/views/pages/auth/register/Main";
-import {default as PageResetPassword} from "@/views/pages/auth/reset-password/Main";
-import {default as PageForgotPassword} from "@/views/pages/auth/forgot-password/Main";
 import {default as PageNotFound} from "@/views/pages/shared/404/Main";
 
-import {default as PageDashboard} from "@/views/pages/private/dashboard/Main";
-import {default as PageFilter} from "@/views/pages/private/dashboard/filter-page";
-import {default as Results} from "@/views/pages/private/dashboard/results";
-import {default as AccountComponent} from "@/views/pages/private/dashboard/account";
-import {default as policyComponent} from "@/views/pages/private/dashboard/privacy-policy";
-import {default as termsComponent} from "@/views/pages/private/dashboard/terms-and-conditions";
-import {default as PageProfile} from "@/views/pages/private/profile/Main";
-
-import {default as PageUsers} from "@/views/pages/private/users/Index";
-import {default as PageUsersCreate} from "@/views/pages/private/users/Create";
-import {default as PageUsersEdit} from "@/views/pages/private/users/Edit";
+import {default as PageDashboard} from "@/views/pages/Main";
+import {default as PageFilter} from "@/views/pages/filter-page";
+import {default as Results} from "@/views/pages/results";
+import {default as AccountComponent} from "@/views/pages/account";
+import {default as policyComponent} from "@/views/pages/privacy-policy";
+import {default as termsComponent} from "@/views/pages/terms-and-conditions";
 
 import abilities from "@/stub/abilities";
 

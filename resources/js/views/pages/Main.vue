@@ -68,7 +68,7 @@ export default defineComponent({
 
 <style scoped>
 .homepage-hero {
-  background-image: url('../../../assets/hero-bg.jpg'); /* Adjust the path as necessary */
+  background-image: url('../assets/hero-bg.jpg'); /* Adjust the path as necessary */
   background-size: cover;
   background-position: top center;
 }
