@@ -1,0 +1,99 @@
+header{
+    nav{
+        li{
+            list-style: none;
+            font-family: Inter;
+            @include fluid-type(15px, 18px, 300px, 1920px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 144.444% */
+            position: relative;
+            transition: all .5s ease;
+
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 110%;
+                width: 0;
+                height: 1px;
+                background-color: #4F45EF;
+                transition: all .5s ease;
+            }
+
+            &:hover{
+                color: #4F45EF;
+
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        margin-top: -20px;
+        margin-bottom: -20px;
+      
+        .ham {
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 400ms;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 80px;
+            height: 65px;
+        
+            &.active {
+                transform: rotate(45deg);
+        
+                .top, .bottom {
+                    stroke-dashoffset: -68px;
+                }
+            }
+        
+            .top, .bottom {
+                stroke-dasharray: 40 121;
+            }
+        
+            .line {
+                fill: none;
+                transition: stroke-dasharray 400ms, stroke-dashoffset 400ms, stroke 400ms;
+                stroke: #4F45EF;
+                stroke-width: 5;
+                stroke-linecap: round;
+            }
+        }
+    }
+}
+
+.mobile-menu{
+    transition: all .5s ease;
+    pointer-events: none;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    &.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        pointer-events: all;
+    }
+    nav{
+        li{
+            list-style: none;
+            font-family: Inter;
+            @include fluid-type(15px, 18px, 300px, 1920px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 144.444% */
+            position: relative;
+            transition: all .5s ease;
+        }
+    }
+
+}

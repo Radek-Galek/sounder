@@ -1,0 +1,41 @@
+.btn{
+    @apply  w-max pt-21 pb-18 sm:pt-14 sm:pb-14 px-25 md:px-30 flex flex-row items-center justify-center gap-13 overflow-hidden cursor-pointer text-center text-white bg-orange-500 text-14 leading-1;
+    transition: all .25s ease; 
+    font-style: normal;
+    border-radius: 28px;
+    height: fit-content;
+    background-color: #4F45EF;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    span {
+        transition: all .33s ease; 
+        backface-visibility: hidden;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        div{
+            transition: transform .44s cubic-bezier(0.165, 0.84, 0.44, 1) 50ms; 
+            backface-visibility: hidden;
+            padding-bottom: 5px;
+
+            &::after{
+                content: attr(data-content);
+                position: absolute;
+                top: calc(100% + 10px);
+                left: 0;
+            }
+        }
+    }   
+
+
+    &:hover{
+        background-color: #7971f1;
+        span div{
+            transform: translateY(calc(-100% - 10px)) translateZ(0);
+        }
+    }
+}
