@@ -62,11 +62,6 @@ module.exports = {
                 }
             }
         },
-        fontFamily: {
-            'copy': ['Sequel100Black-45', 'sans-serif'],
-            'header': ['Sequel100Black-95', 'sans-serif'],
-            'header-medium': ['Sequel100Black-75', 'sans-serif']
-        }
        
     },
     variants: {},

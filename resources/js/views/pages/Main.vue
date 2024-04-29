@@ -92,9 +92,9 @@ export default defineComponent({
 
         const loginWithSpotify = () => {
             // Define your application's client ID and redirect URI
-            const clientId = '79fce09ecd854abc88b57c7a72a6f4bd'; // Replace with your actual client ID
-            const redirectUri = 'http://localhost:8000/callback'; // Replace with your actual redirect URI
-            const scopes = 'user-read-private user-read-email user-top-read'; // Define the scopes you need
+            const clientId = '79fce09ecd854abc88b57c7a72a6f4bd'; 
+            const redirectUri = 'http://localhost:8000/callback';
+            const scopes = 'user-read-private user-read-email user-top-read';
 
             // Redirect the user to the Spotify authorization page
             window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}&response_type=code&show_dialog=true`;
